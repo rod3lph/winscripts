@@ -227,3 +227,7 @@
   pause
   restart-computer
   ```
+  
+  ### LT installers
+  # msi https://lt.netwize.com/LabTech/Deployment.aspx?InstallerToken=228deee53db24abaa1f5083edbe0c349
+  # exe https://lt.netwize.com/LabTech/Deployment.aspx?InstallerToken=4bf6ed9456814051a92881d484cbff29
