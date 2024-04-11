@@ -1,8 +1,9 @@
-force AAD Dir sync update 
+- force AAD Dir sync update Delta only
 ``` 
-# Delta only
 Invoke-Command -ComputerName cdlfdc01 -ScriptBlock {Start-ADSyncSyncCycle -PolicyType Delta}
+```
 
-# Full
+- force AAD Dir sync update Full
+```
 Invoke-Command -ComputerName cdlfdc01 -ScriptBlock {Start-ADSyncSyncCycle -PolicyType Initial}
 ```
