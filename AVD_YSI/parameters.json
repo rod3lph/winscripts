@@ -1,0 +1,233 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "hciArtifactsLocation": {
+            "value": "https://wvdportalstorageblob.blob.core.windows.net/galleryartifacts/HCIScripts_1.0.02655.277/HciCustomScript.ps1"
+        },
+        "customLocationId": {
+            "value": ""
+        },
+        "virtualProcessorCount": {
+            "value": null
+        },
+        "memoryMB": {
+            "value": 0
+        },
+        "maximumMemoryMB": {
+            "value": 0
+        },
+        "minimumMemoryMB": {
+            "value": 0
+        },
+        "dynamicMemoryConfig": {
+            "value": false
+        },
+        "vmInfrastructureType": {
+            "value": "Cloud"
+        },
+        "artifactsLocation": {
+            "value": "https://wvdportalstorageblob.blob.core.windows.net/galleryartifacts/Configuration_1.0.02655.277.zip"
+        },
+        "nestedTemplatesLocation": {
+            "value": "https://wvdportalstorageblob.blob.core.windows.net/galleryartifacts/armtemplates/Hostpool_1.0.02655.277/nestedTemplates/"
+        },
+        "hostpoolName": {
+            "value": "Yessio-USW-AVD-Pool-2"
+        },
+        "hostpoolProperties": {
+            "value": {
+                "agentUpdate": null,
+                "friendlyName": null,
+                "description": "Created through the Azure Virtual Desktop extension",
+                "hostPoolType": "Pooled",
+                "personalDesktopAssignmentType": null,
+                "applicationGroupReferences": [
+                    "/subscriptions/268c5b71-100d-4e97-a399-d90debff4eb0/resourcegroups/Yessio-USW-VDI-RG/providers/Microsoft.DesktopVirtualization/applicationgroups/Yessio-USW-AVD-Pool-2-DAG"
+                ],
+                "customRdpProperty": "drivestoredirect:s:*;audiomode:i:0;videoplaybackmode:i:1;redirectclipboard:i:1;redirectprinters:i:1;devicestoredirect:s:*;redirectcomports:i:1;redirectsmartcards:i:1;usbdevicestoredirect:s:*;enablecredsspsupport:i:1;redirectwebauthn:i:1;use multimon:i:1;audiocapturemode:i:1;",
+                "maxSessionLimit": 14,
+                "loadBalancerType": "BreadthFirst",
+                "validationEnvironment": false,
+                "ring": null,
+                "registrationInfo": null,
+                "vmTemplate": "{\"domain\":\"\",\"galleryImageOffer\":null,\"galleryImagePublisher\":null,\"galleryImageSKU\":null,\"imageType\":\"CustomImage\",\"customImageId\":\"/subscriptions/268c5b71-100d-4e97-a399-d90debff4eb0/resourceGroups/Yessio-USW-VDI-RG/providers/Microsoft.Compute/images/YSIAVD-image-20230831\",\"namePrefix\":\"YSIAVD02\",\"osDiskType\":\"StandardSSD_LRS\",\"vmSize\":{\"id\":\"Standard_D16s_v5\",\"cores\":16,\"ram\":64,\"rdmaEnabled\":false,\"supportsMemoryPreservingMaintenance\":true},\"galleryItemId\":null,\"hibernate\":false,\"diskSizeGB\":0,\"securityType\":\"Standard\",\"secureBoot\":false,\"vTPM\":false,\"vmInfrastructureType\":\"Cloud\",\"virtualProcessorCount\":null,\"memoryGB\":null,\"maximumMemoryGB\":null,\"minimumMemoryGB\":null,\"dynamicMemoryConfig\":false}",
+                "preferredAppGroupType": "Desktop",
+                "migrationRequest": null,
+                "cloudPcResource": false,
+                "startVMOnConnect": false,
+                "ssoadfsAuthority": null,
+                "ssoClientId": null,
+                "ssoClientSecretKeyVaultPath": null,
+                "ssoSecretType": null,
+                "objectId": "d2cd3aab-7cde-4f31-b75d-4d8ccf853fa3"
+            }
+        },
+        "hostpoolResourceGroup": {
+            "value": "Yessio-USW-VDI-RG"
+        },
+        "hostpoolLocation": {
+            "value": "westus"
+        },
+        "hostpoolToken": {
+            "value": null
+        },
+        "vmInitialNumber": {
+            "value": 2
+        },
+        "vmResourceGroup": {
+            "value": "Yessio-USW-VDI-RG"
+        },
+        "vmLocation": {
+            "value": "westus"
+        },
+        "vmNamePrefix": {
+            "value": "YSIAVD02"
+        },
+        "vmNumberOfInstances": {
+            "value": 2
+        },
+        "vmSize": {
+            "value": "Standard_D16s_v5"
+        },
+        "vmDiskType": {
+            "value": "StandardSSD_LRS"
+        },
+        "vmDiskSizeGB": {
+            "value": 0
+        },
+        "vmHibernate": {
+            "value": false
+        },
+        "availabilityOption": {
+            "value": "None"
+        },
+        "availabilitySetName": {
+            "value": ""
+        },
+        "createAvailabilitySet": {
+            "value": false
+        },
+        "availabilitySetUpdateDomainCount": {
+            "value": 5
+        },
+        "availabilitySetFaultDomainCount": {
+            "value": 2
+        },
+        "availabilityZones": {
+            "value": []
+        },
+        "securityType": {
+            "value": "Standard"
+        },
+        "secureBoot": {
+            "value": false
+        },
+        "vTPM": {
+            "value": false
+        },
+        "managedDiskSecurityEncryptionType": {
+            "value": "VMGuestStateOnly"
+        },
+        "integrityMonitoring": {
+            "value": false
+        },
+        "vmImageType": {
+            "value": "CustomImage"
+        },
+        "bootDiagnostics": {
+            "value": {
+                "enabled": true
+            }
+        },
+        "customConfigurationScriptUrl": {
+            "value": ""
+        },
+        "virtualNetworkResourceGroupName": {
+            "value": "Yessio-USW-VDI-RG"
+        },
+        "existingVnetName": {
+            "value": "yessio1-vnet"
+        },
+        "existingSubnetName": {
+            "value": "SophosXGVMLAN"
+        },
+        "createNetworkSecurityGroup": {
+            "value": false
+        },
+        "aadJoin": {
+            "value": true
+        },
+        "intune": {
+            "value": true
+        },
+        "domain": {
+            "value": ""
+        },
+        "ouPath": {
+            "value": ""
+        },
+        "vmAdministratorAccountUsername": {
+            "value": "wvdadmin"
+        },
+        "vmAdministratorAccountPassword": {
+            "value": null
+        },
+        "networkInterfaceTags": {
+            "value": {
+                "Created": "20240501",
+                "CreatedBy": "Rodel Laguisma",
+                "MSP": "Netwize",
+                "AVDGroup": "2",
+                "StartTier": "Tier0",
+                "cm-resource-parent": "/subscriptions/268c5b71-100d-4e97-a399-d90debff4eb0/resourcegroups/Yessio-USW-VDI-RG/providers/Microsoft.DesktopVirtualization/hostpools/Yessio-USW-AVD-Pool-2"
+            }
+        },
+        "networkSecurityGroupTags": {
+            "value": {
+                "Created": "20240501",
+                "CreatedBy": "Rodel Laguisma",
+                "MSP": "Netwize",
+                "AVDGroup": "2",
+                "StartTier": "Tier0",
+                "cm-resource-parent": "/subscriptions/268c5b71-100d-4e97-a399-d90debff4eb0/resourcegroups/Yessio-USW-VDI-RG/providers/Microsoft.DesktopVirtualization/hostpools/Yessio-USW-AVD-Pool-2"
+            }
+        },
+        "availabilitySetTags": {
+            "value": {
+                "Created": "20240501",
+                "CreatedBy": "Rodel Laguisma",
+                "MSP": "Netwize",
+                "AVDGroup": "2",
+                "StartTier": "Tier0",
+                "cm-resource-parent": "/subscriptions/268c5b71-100d-4e97-a399-d90debff4eb0/resourceGroups/Yessio-USW-VDI-RG/providers/Microsoft.DesktopVirtualization/hostpools/Yessio-USW-AVD-Pool-2"
+            }
+        },
+        "virtualMachineTags": {
+            "value": {
+                "Created": "20240501",
+                "CreatedBy": "Rodel Laguisma",
+                "MSP": "Netwize",
+                "AVDGroup": "2",
+                "StartTier": "Tier0",
+                "cm-resource-parent": "/subscriptions/268c5b71-100d-4e97-a399-d90debff4eb0/resourceGroups/Yessio-USW-VDI-RG/providers/Microsoft.DesktopVirtualization/hostpools/Yessio-USW-AVD-Pool-2"
+            }
+        },
+        "deploymentId": {
+            "value": "48db8ee6-375e-4d35-96a7-0d2bcba080b7"
+        },
+        "apiVersion": {
+            "value": "2022-10-14-preview"
+        },
+        "vmCustomImageSourceId": {
+            "value": "/subscriptions/268c5b71-100d-4e97-a399-d90debff4eb0/resourceGroups/Yessio-USW-VDI-RG/providers/Microsoft.Compute/images/YSIAVD-image-20230831"
+        },
+        "systemData": {
+            "value": {
+                "aadJoinPreview": false,
+                "sessionHostConfigurationVersion": "",
+                "firstPartyExtension": false
+            }
+        }
+    }
+}
