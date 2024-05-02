@@ -1,0 +1,67 @@
+{
+  "id": "/subscriptions/36dc0aa3-b388-4a25-a238-9eafeb64bf27/resourceGroups/iactrain/providers/Microsoft.Resources/deployments/Microsoft.Template-20240501225728",
+  "name": "Microsoft.Template-20240501225728",
+  "type": "Microsoft.Resources/deployments",
+  "properties": {
+    "templateLink": {
+      "uri": "https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/quickstarts/microsoft.storage/storage-account-create/azuredeploy.json",
+      "contentVersion": "1.0.0.0"
+    },
+    "templateHash": "13120038605368246703",
+    "parameters": {
+      "storageAccountType": {
+        "type": "String",
+        "value": "Standard_LRS"
+      },
+      "location": {
+        "type": "String",
+        "value": "westus3"
+      },
+      "storageAccountName": {
+        "type": "String",
+        "value": "iactrainstor1"
+      }
+    },
+    "mode": "Incremental",
+    "debugSetting": {
+      "detailLevel": "None"
+    },
+    "provisioningState": "Succeeded",
+    "timestamp": "2024-05-02T04:59:08.5584559Z",
+    "duration": "PT1M37.9428941S",
+    "correlationId": "98041a66-38a5-4584-b716-09471d6e0825",
+    "providers": [
+      {
+        "namespace": "Microsoft.Storage",
+        "resourceTypes": [
+          {
+            "resourceType": "storageAccounts",
+            "locations": [
+              "westus3"
+            ]
+          }
+        ]
+      }
+    ],
+    "dependencies": [],
+    "outputs": {
+      "storageAccountName": {
+        "type": "String",
+        "value": "iactrainstor1"
+      },
+      "storageAccountId": {
+        "type": "String",
+        "value": "/subscriptions/36dc0aa3-b388-4a25-a238-9eafeb64bf27/resourceGroups/iactrain/providers/Microsoft.Storage/storageAccounts/iactrainstor1"
+      }
+    },
+    "outputResources": [
+      {
+        "id": "/subscriptions/36dc0aa3-b388-4a25-a238-9eafeb64bf27/resourceGroups/iactrain/providers/Microsoft.Storage/storageAccounts/iactrainstor1"
+      }
+    ],
+    "validationLevel": "Template"
+  },
+  "tags": {
+    "marketplaceItemId": "Microsoft.Template"
+  }
+}
